@@ -5,5 +5,5 @@ down:
 				docker compose down
 
 # コンテナに入る
-bash:
-				docker compose run --rm rails bash
+ash:
+				docker compose exec web /bin/bash
