@@ -89,6 +89,16 @@ Profile
 }
 
 /*---------------------------------------
+Work history
+---------------------------------------*/
+
+
+/*---------------------------------------
+Skill
+---------------------------------------*/
+
+
+/*---------------------------------------
 Works
 ---------------------------------------*/
 #works ul {
@@ -149,6 +159,25 @@ Contact
   color: #24292e;
 }
 
+/*----------------------------------------
+フッター
+----------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*---------------------------------------
+その他
+---------------------------------------*/
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
 /*---------------------------------------
 SP
 ---------------------------------------*/
@@ -171,12 +200,10 @@ SP
     height: auto;
     flex-direction: column;
   }
-
   #header li {
     font-size: 0.8rem;
     margin-left: 20px;
   }
-
   #header li:first-child {
     margin-left: 0;
   }
@@ -187,7 +214,6 @@ SP
   #works ul {
     flex-direction: column;
   }
-
   #works li {
     width: 100%;
   }
@@ -198,11 +224,9 @@ SP
   #contact dl {
     flex-direction: column;
   }
-
   #contact dt {
     width: 100%;
   }
-
   #contact dd {
     width: 100%;
   }
