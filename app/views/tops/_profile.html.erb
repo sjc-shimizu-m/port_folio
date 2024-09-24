@@ -1,15 +1,19 @@
 <section id="plofile" class="wrapper">
   <h2 class="sec-title">Plofile</h2>
-  <%= image_tag 'programing.png', width: '10%', height: '10%' %>
-  <ul>
-    <li>aaa name</li>
-    <li>xxxxxx Bulding x-x-x Izumo, Shimane, 000-0000 Japan</li>
-    <li>tel: 000-0000-0000-</li>
-    <li>mail: aaa@aaaa.jp</li>
-  </ul>
-  <p>
-    プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト
-    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-  </p>
+  <div class="flex">
+    <ul>
+      <li><%= image_tag 'programing.png', width: '80%', height: '80%' %></li>
+    </ul>
+    <ul>
+      <li><%= @name %></li>
+      <li><%= @address %></li>
+      <li>tel: <%= @tel %></li>
+      <li>mail: <%= @email %></li>
+      <p>
+        プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      </p>
+    </ul>
+  </div>
 </section>
