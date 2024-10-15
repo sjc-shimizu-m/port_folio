@@ -6,10 +6,12 @@ html {
 
 body {
   color: #24292e;
+  background-color: #fbfaf5;
 }
 
 a {
   text-decoration: none;
+  color: #24292e;
 }
 
 li {
@@ -41,14 +43,14 @@ li {
 ヘッダー
 -------------------------------------------------*/
 #header {
-  max-width: 960px;
+  /* max-width: 960px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 270px;
   margin: 0 auto;
   padding: 0 4%;
-  background-color: #e6e6e6;
+  background-color: #bce2e8;
 }
 
 #header ul {
@@ -89,13 +91,25 @@ Profile
 }
 
 /*---------------------------------------
-Work history
----------------------------------------*/
-
-
-/*---------------------------------------
 Skill
 ---------------------------------------*/
+#skill ul {
+  display: block;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#skill li:first-child {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#skill li {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 10px;
+}
 
 
 /*---------------------------------------
@@ -103,7 +117,7 @@ Works
 ---------------------------------------*/
 #works ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
@@ -148,10 +162,10 @@ Contact
 
 #contact .button input {
   width: 200px;
-  background-color: #24292e;
-  color: #fff;
+  background-color: #bce2e8;
+  color: #24292e;
   padding: 15px 0;
-  border: solid 1px #24292e;
+  border: solid 1px #bce2e8;
 }
 
 #contact .button input:hover {
@@ -163,8 +177,8 @@ Contact
 フッター
 ----------------------------------------*/
 #footer {
-  background-color: #24292e;
-  color: #fff;
+  background-color: #bce2e8;
+  color: #24292e;
   font-size: 0.5rem;
   padding: 10px 20px;
   text-align: center;
