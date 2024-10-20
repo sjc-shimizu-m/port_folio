@@ -18,6 +18,20 @@ li {
   list-style: none;
 }
 
+h2 {
+  border-bottom: solid 3px #cce4ff;
+  position: relative;
+}
+
+h2:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #5472cd;
+  bottom: -3px;
+  width: 20%;
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto 130px auto;
@@ -35,7 +49,7 @@ li {
 
 .sec-title {
   font-size: 1.5em;
-  text-align: center;
+  text-align: left;
   margin-bottom: 65px;
 }
 
@@ -43,14 +57,14 @@ li {
 ヘッダー
 -------------------------------------------------*/
 #header {
-  /* max-width: 960px; */
+  max-width: 960px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 270px;
   margin: 0 auto;
   padding: 0 4%;
-  background-color: #bce2e8;
+  background-color: #fbfaf5;
 }
 
 #header ul {
@@ -63,7 +77,7 @@ li {
   margin-left: 30px;
 }
 
-#header li a {
+#header a {
   color: #24292e;
 }
 
@@ -73,6 +87,19 @@ li {
 
 #header li img.icon {
   width: 20px;
+}
+
+/*---------------------------------------
+Mainvisual
+---------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
 }
 
 /*---------------------------------------
@@ -120,11 +147,15 @@ Works
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  background: #e7f1fb;
+  box-shadow: #e7f1fb 0 0 10px 10px;
+  margin: 50px;
+  font-size: 100%;
+  padding: 20px;
 }
 
 #works li {
   width: 31%;
-  margin-bottom: 23px;
 }
 
 /*---------------------------------------
@@ -134,6 +165,11 @@ Contact
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
+}
+
+#contact dt, #contact dd {
+  margin: 0;
+  padding: 0;
 }
 
 #contact dt {
@@ -150,6 +186,7 @@ Contact
   width: 100%;
   border: solid 1px #c8c8c8;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 #contact dd textarea {
@@ -162,10 +199,10 @@ Contact
 
 #contact .button input {
   width: 200px;
-  background-color: #bce2e8;
+  background-color: #cce4ff;
   color: #24292e;
   padding: 15px 0;
-  border: solid 1px #bce2e8;
+  border: solid 1px #cce4ff;
 }
 
 #contact .button input:hover {
@@ -177,7 +214,7 @@ Contact
 フッター
 ----------------------------------------*/
 #footer {
-  background-color: #bce2e8;
+  background-color: #cce4ff;
   color: #24292e;
   font-size: 0.5rem;
   padding: 10px 20px;

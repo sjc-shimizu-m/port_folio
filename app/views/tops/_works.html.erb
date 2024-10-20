@@ -1,35 +1,13 @@
 <section id="works" class="wrapper">
   <h2 class="sec-title">Works</h2>
-  <ul>
-    <li><%=image_tag 'design.png', width: '70%', height: '85%' %></li>
-    <li>
-      <%= link_to("業務管理システム", "https://www.google.co.jp/")%><br>
-      製造、テスト<br>
-      Ruby on Rails、React
-    </li>
-  </ul>
-  <ul>
-    <li><%=image_tag 'design.png', width: '70%', height: '85%' %></li>
-    <li>
-      <%= link_to("企業管理システム", "https://www.google.co.jp/")%><br>
-      バージョンアップ作業<br>
-      Ruby on Rails
-    </li>
-  </ul>
-  <ul>
-    <li><%=image_tag 'design.png', width: '70%', height: '85%' %></li>
-    <li>
-      <%= link_to("学習管理システム", "https://www.google.co.jp/")%><br>
-      テスト<br>
-      Ruby on Rails
-    </li>
-  </ul>
-  <ul>
-    <li><%=image_tag 'design.png', width: '70%', height: '85%' %></li>
-    <li>
-      <%= link_to("予約管理システム", "https://www.google.co.jp/")%><br>
-      製造、テスト<br>
-      Ruby on Rails
-    </li>
-  </ul>
+  <% @works.each do |work| %>
+    <ul>
+      <li><%=image_tag work[:image_path], width: '70%', height: '85%' %></li>
+      <li>
+        システム名：<%= link_to(work[:name], work[:url])%><br>
+        業務：<%= work[:job_description] %><br>
+        言語：<%= work[:pg_language]%>
+      </li>
+    </ul>
+  <% end %>
 </section>
