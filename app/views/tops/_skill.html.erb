@@ -3,22 +3,21 @@
   <div class="flex">
     <ul>
       <li>言語</li>
-      <li>Ruby<li>
-      <li>Ruby on Rails</li>
-      <li>Java</li>
-      <li>Java Script</li>
-      <li>React</li>
+      <% @pg_language.each do |pg_language|%>
+        <li><%= pg_language %></li>
+      <% end %>
     </ul>
     <ul>
       <li>資格</li>
-      <li>Ruby Silver<li>
-      <li>Ruby Gold</li>
+      <% @qualifications.each do |qualification|%>
+        <li><%= qualification %></li>
+      <% end %>
     </ul>
     <ul>
       <li>ツール</li>
-      <li>Git / GitHub<li>
-      <li>Slack</li>
-      <li>Docker</li>
+      <% @tools.each do |tool|%>
+        <li><%= tool %></li>
+      <% end %>
     </ul>
   </div>
 </section>
